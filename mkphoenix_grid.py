@@ -72,7 +72,7 @@ def fitspec():
 
     #g=load_grid('phoenix_20000_k.h5')
     g = load_grid('phoenix_r20000_1.9-2.5_k.h5')
-    my_model = assemble_model(g, vrad=0, vrot=0,R=5400,spectrum=s,normalize_npol=4)
+    my_model = assemble_model(g, vrad=0, vrot=0,R=20000,spectrum=s,normalize_npol=4)
 
     wave,flux = my_model()
     plt.clf()
